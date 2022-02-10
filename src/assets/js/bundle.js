@@ -14,7 +14,7 @@ const randomRange = (min, max) => Math.random() * (max - min) + min;
 const createCircle = () => {
   const $circle = createSVGElement('circle');
   $circle.setAttribute('r', randomRange(0.5, 2));
-  $circle.setAttribute('fill', '#02e9e2');
+  $circle.setAttribute('fill', '#f3f3f3');
   $circle.setAttribute('cx', randomRange(0, 75));
   $circle.setAttribute('cy', randomRange(0, 75));
   return $circle;
