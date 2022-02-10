@@ -6,6 +6,7 @@ module.exports = function (eleventyConfig) {
   // copy stuff
   eleventyConfig.addPassthroughCopy('./src/assets/css');
   eleventyConfig.addPassthroughCopy('./src/assets/js');
+  eleventyConfig.addPassthroughCopy('./src/assets/images');
 
   // workflow
   eleventyConfig.setBrowserSyncConfig(fd.bs);
