@@ -1,4 +1,34 @@
 body {
-  font-family: sans-serif;
-  background-color: aquamarine;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #131c29;
+  overflow: hidden;
+}
+
+#rocket-icon {
+  width: 100px;
+  transform: rotate(-45deg);
+}
+
+.flame {
+  transform-origin: 15px 37.5px;
+}
+
+.detail {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 16px;
+  line-height: 1.6;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  color: hsla(210, 84%, 85%, 0.4);
+  text-align: center;
+  padding: 24px;
+
+  a {
+    color: hsla(210, 84%, 85%, 0.6);
+  }
 }

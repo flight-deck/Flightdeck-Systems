@@ -6,10 +6,6 @@ module.exports = function (eleventyConfig) {
   // copy stuff
   eleventyConfig.addPassthroughCopy('./src/assets/css');
   eleventyConfig.addPassthroughCopy('./src/assets/js');
-  eleventyConfig.addPassthroughCopy('./src/assets/images');
-  eleventyConfig.addPassthroughCopy('./src/assets/fonts');
-
-  // add collections
 
   // workflow
   eleventyConfig.setBrowserSyncConfig(fd.bs);
@@ -17,6 +13,7 @@ module.exports = function (eleventyConfig) {
     dir: {
       input: 'src',
       output: '_site', // default
+      layouts: '_layouts',
     },
   };
 };
