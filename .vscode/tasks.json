@@ -1,4 +1,35 @@
 {
+  "tasks": [
+    {
+      "label": "Clean Site Files",
+      "type": "npm",
+      "script": "clean:site",
+      "problemMatcher": [],
+      "detail": "rm -rf _site"
+    },
+    {
+      "type": "npm",
+      "script": "clean",
+      "problemMatcher": [],
+      "label": "Start Fresh - Clean it ALL",
+      "detail": "npm run clean:node && npm run clean:site && echo \"\\033[32m🧹 All Clean ✨\"\"\\033[0m Run \"\"\\033[33mnpm install\"\"\\033[0m to start fresh 🤩\""
+    },
+    {
+      "type": "npm",
+      "script": "start",
+      "problemMatcher": [],
+      "label": "Start Project",
+      "detail": "npm-run-all build:sass --parallel watch:*"
+    },
+    {
+      "type": "npm",
+      "script": "build",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "Build Project",
+      "detail": "npm-run-all build:*"
+    }
+  ]
   // See https://go.microsoft.com/fwlink/?LinkId=733558
   // for the documentation about the tasks.json format
   // "version": "2.0.0",
