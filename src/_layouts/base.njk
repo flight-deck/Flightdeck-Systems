@@ -16,12 +16,13 @@
 </head>
 
 <body>
-  <div id='stars'></div>
-  <div id='stars2'></div>
-  <div id='stars3'></div>
-<main class="space-travel">
+{% include "direction.njk" %}
+{% include "stars.njk" %}
+<div class="ship">
+  <div class="wrapper">
   {{ content | safe }}
-  {% include "footer.njk" %}
-</main>
+  </div>
+</div>
+{% include "footer.njk" %}
 </body>
 </html>

@@ -1,7 +1,6 @@
 ---
 layout: base
 templateEngineOverride: njk,md
-title: Hello World
 ---
 
 {%- from "macros/rocket.njk" import rocket -%}
