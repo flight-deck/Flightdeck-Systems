@@ -4,13 +4,16 @@
 {% include "head.njk" %}
 
 <body>
-{% include "direction.njk" %}
-{% include "stars.njk" %}
-<div class="ship">
-  <div class="wrapper">
-  {{ content | safe }}
+  {% include "direction.njk" %}
+  {% include "stars.njk" %}
+
+  <div class="ship">
+    <div class="wrapper">
+      {{ content | safe }}
+    </div>
   </div>
-</div>
-{% include "footer.njk" %}
+
+  {% include "footer.njk" %}
 </body>
+
 </html>

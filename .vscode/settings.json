@@ -16,8 +16,5 @@
   "workbench.colorCustomizations": {
     "titleBar.activeForeground": "#00fad9",
     "titleBar.inactiveForeground": "#00fad95D"
-  },
-  "files.associations": {
-    "*.njk": "nunjucks"
   }
 }

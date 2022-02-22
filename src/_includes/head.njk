@@ -1,5 +1,8 @@
-{%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ site.name}}{% endset -%}
-{%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}{% endset -%}
+{%- set pageTitle %}
+{% if title %}{{ title }} | {% endif %}{{ site.name}}{% endset -%}
+
+{%- set pageDescription %}
+{% if description %}{{ description }}{% else %}{{ site.description }}{% endif %}{% endset -%}
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,24 +12,24 @@
   <meta name="generator" content="Built with Flightdeck 🚀">
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://flightdeck.systems/">
+  <meta property="og:url" content="{{ site.url }}">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Flightdeck Systems">
-  <meta property="og:description" content="Just for fun but we plan on using this domain for something grandiose 🚀">
+  <meta property="og:title" content="{{ site.name }}">
+  <meta property="og:description" content="{{ site.description }}">
   <meta property="og:image" content="{{ '/assets/images/open-graph.png' | url }}">
 
   <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta property="twitter:domain" content="flightdeck.systems">
-  <meta property="twitter:url" content="https://flightdeck.systems/">
-  <meta name="twitter:title" content="Flightdeck Systems">
-  <meta name="twitter:description" content="Just for fun but we plan on using this domain for something grandiose 🚀">
+  <meta property="twitter:domain" content="{{ site.url | replace('https://', '') | replace('/', '')}}">
+  <meta property="twitter:url" content="{{ site.url }}">
+  <meta name="twitter:title" content="{{ site.name }}">
+  <meta name="twitter:description" content="{{ site.description }}">
   <meta name="twitter:image" content="{{ '/assets/images/open-graph.png' | url }}">
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
   {% if site.gtagId %}
   {%- set gtag = site.gtagId -%}
-  {%- from "macros/analytics.njk" import gtagId -%}{{ gtagId(gtag)}}
+  {%- from "macros/analytics.njk" import gtagId -%}{{ gtagId(gtag) }}
   {% endif %}
 </head>
