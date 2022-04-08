@@ -9,9 +9,10 @@
     "build": "npm-run-all build:*",
     "build:sass": "sass --no-source-map --style=compressed src/_scss:_site/assets/css",
     "build:11ty": "eleventy",
-    "fresh": "npm run clean:node && npm run clean && echo \"\\033[32m🧹 All Clean ✨\"\"\\033[0m Run \"\"\\033[33mnpm install\"\"\\033[0m to start fresh 🤩\"",
+    "fresh": "pnpm run clean:node & pnpm run clean & echo \"\\033[32m🧹 All Clean ✨\"\"\\033[0m Run \"\"\\033[33mpnpm install\"\"\\033[0m to start fresh 🤩\"",
     "clean:node": "rm -rf node_modules package-lock.json",
-    "clean": "rm -rf _site"
+    "clean:site": "rm -rf _site",
+    "purge": "pnpm clean:site & pnpm clean:node"
   },
   "repository": {
     "type": "git",

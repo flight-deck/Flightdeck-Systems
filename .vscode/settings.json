@@ -16,5 +16,11 @@
   "workbench.colorCustomizations": {
     "titleBar.activeForeground": "#00fad9",
     "titleBar.inactiveForeground": "#00fad95D"
-  }
+  },
+  "cSpell.words": [
+    "endmacro"
+  ],
+  "cSpell.ignoreWords": [
+    "mpnpm"
+  ]
 }
